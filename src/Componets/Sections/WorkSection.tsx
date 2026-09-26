@@ -19,7 +19,7 @@ function WorkSection() {
           <article className="grid grid-cols-[38%_1fr] gap-[5vw] border-b border-paper/25 py-10 max-[720px]:grid-cols-1 max-[720px]:gap-6 max-[720px]:py-8" key={project.number}>
             <div className={`relative aspect-[1.35] overflow-hidden max-[720px]:aspect-[1.25] ${toneClasses[project.tone as keyof typeof toneClasses]}`}>
               {project.image ? (
-                <img className="absolute inset-0 size-full object-cover" src={project.image} alt={`${project.title} project preview`} />
+                <img className="absolute inset-0 size-full object-cover" src={`${import.meta.env.BASE_URL}${project.image.replace(/^\/+/, '')}`} alt={`${project.title} project preview`} />
               ) : (
                 <>
                   <span className="absolute left-[8%] top-[9%] z-[2] font-serif text-[clamp(2rem,4vw,4.5rem)] tracking-[-0.08em]">{project.title}</span>

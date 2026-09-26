@@ -37,5 +37,7 @@ export const projects: Project[] = [
     year: '2024',
     tone: 'project-blue',
     description: 'A visual identity for a late-night radio show built around bold voices and even bolder detours.',
+    url: 'https://after-hours.vercel.app/',
+    image: '',
   },
 ]

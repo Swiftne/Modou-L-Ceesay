@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.VITE_BASE_PATH || '/Modou-L-Ceesay'
+  base: process.env.VITE_BASE_PATH || '/',
 
 })
   
