@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import SiteNav from '../Componets/Layouts/SiteNav'
 import AboutSection from '../Componets/Sections/AboutSection'
 import ContactSection from '../Componets/Sections/ContactSection'
@@ -40,6 +41,7 @@ function App() {
       <SkillsSection />
       <AboutSection />
       <ContactSection />
+      <Analytics />
     </main>
   )
 }
